@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: rgb(5, 5, 5);
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    background: #fff;
+}
+
+
+/* VISTA DE CATALOGO EFECTO HOVER */
+.card-catalogo{
+    margin: 30px;
+    width: 250px;
+    height: 350px;
+    border-radius: 10px;
+    background:var(--i);
+    background-size: cover;
+    box-shadow: 1px 3px rgba(3,32,51,8);
+    overflow: hidden ;
+    flex-wrap: wrap;
+    font-size: smaller;
+}
+.card-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: rgba(0, 0, 0, .4);
+    opacity: 0;
+    transition: .5s;
+    
+}
+.card-content a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, .6);
+    font-weight: bold;
+}
+.card-content h5, a{
+    color: rgba(253, 253, 253, 0.8);
+    margin:10px 0;
+    align-items: center;
+    
+}
+.card-catalogo:hover .card-content{
+    opacity: 2;
+
+}
+a{
+    text-decoration: none;
+}
+
+
+/* EFECTO DE IAMGENES AL COMIENZO
+header{
+    background-color: rgb(204, 196, 196);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    
+    }
+
+    section{
+        box-sizing: border-box;
+        display: flex;
+        width: auto;
+        height: 600px;
+        margin:0px auto;
+        background-color: rgb(142, 149, 155);
+    }
+    
+    section img{
+        width: 0px;
+        flex-grow: 2;
+        object-fit:cover;
+        opacity: .7;
+        transition: .5s ease;
+        
+    }
+    
+    section img:hover{
+        cursor: pointer;
+        width: 300px;
+        opacity: 1;
+        filter: contrast(120%);
+    }
+    .img1{
+        width: 130px; height: 600px;
+
+    } */
+
+    
+    /* ESTILO CONTENEDOR Y QUE SEA RESPONSIVA */
+    .container{
+        width: 100%;
+        display: flex;
+        max-width: 1100px;
+        flex-wrap: wrap;
+    }
+    /* CLASE CARD DONDE LE AJUSTO EL TEXTO, MARGENES Y DARLE UN EFECTO*/
+    .card{
+        width: 100%;
+        margin: 20px;
+        border-radius: 6px;
+        overflow: hidden;
+        background: #fff;
+        box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+        cursor:default;
+        transition: all 400ms ease;
+
+    }
+    /* CUANDO SE HAGA CLICK EN LA TARJETA */
+    .card:hover{
+        box-shadow: 10px 10px 30px rgba(0,0,0,0.4);
+        transform: translateY(-5%);
+
+    }
+    /* IMG DE LA TARJETA */
+    .card img{
+        width: 100%;
+        padding: 10px;
+        
+    }
+    .card .card-body{
+
+        padding: 15px;
+        text-align: center;
+
+    }
+    /* PARRAFO DE LA TARJETA */
+    .card .card-body p{
+        line-height:  1.25;
+        color: #6e6e6e;
+    }
+    
+    /* BOTON DE COMPRA Y EL EFECTO QUE ESTA TIENE */
+    .card  .card-body a{
+
+        display: inline-block;
+        text-decoration: none;
+        color: #05d9f5;
+        padding: 10px;
+        margin-top:10px;
+        border: 1px solid #2fb4cc;
+        border-radius: 4px;
+        transition: all 400ms ease;
+        margin-bottom: 5px;
+
+    }
+
+    .card .card-body a:hover{
+        background-color: #018888;
+        color: rgb(1, 1, 1) ;
+    }
+
+    /*Aquí debajo va el FOOTER*/
+
+footer{
+    width: 100%;
+    padding: 0px;
+    font-size: smaller;
+    background-image: url(img/background-footer.svg);
+    background-size: cover;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container__footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.box__footer{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.box__footer .logo img{
+    width: 100px;
+}
+
+.box__footer .terms{
+    max-width: 350px;
+    margin-top: 20px;
+    font-weight: 500;
+    color: #7a7a7a;
+    font-size: 18px;
+}
+
+.box__footer h2{
+    margin-bottom: 30px;
+    color: #343434;
+    font-weight: 700;
+}
+
+.box__footer a{
+    margin-top: 10px;
+    color: #7a7a7a;
+    font-weight: 600;
+}
+
+.box__footer a:hover{
+    opacity: 0.8;
+}
+
+.box__footer a .fab{
+    font-size: 20px;
+}
+
+.box__copyright{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.box__copyright p{
+    margin-top: 20px;
+    color: #7a7a7a;
+}
+
+.box__copyright hr{
+    border: none;
+    height: 1px;
+    background-color: #7a7a7a;
+}
+    /* MENU */
+    /*  
+    .nav{
+        padding: 0 400px;
+        height: 80px;
+        background-color: rgb(235, 66, 66);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+    }
+    .nav_links{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        top: 80px;
+        right: 0;
+        background-color: black;
+        display: grid;
+        place-items: center;
+        clip-path: circle(0% at top left);
+        transition: clip-path .4s;
+    
+    }
+    
+    .nav_link{
+        text-decoration: none;
+        color:white;
+    }
+    
+    
+    .nav_links:target{
+        clip-path:circle(150% at top left
+        ) ;
+    
+    } 
+     
+    fin menu */
+    
+    

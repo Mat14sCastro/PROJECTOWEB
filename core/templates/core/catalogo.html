@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Catalogo</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'core/'%}css/style2.css">
+    <script src="https://kit.fontawesome.com/f9489c3667.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  </head>
+  <body>
+   
+
+      <div class="container">
+      <!--  PISTOLAS-->
+      <div class="card-catalogo">
+        <div class="card-content">
+          <h5>Pistolas</h5>
+          <a href="{% url 'pistols' %}" target="_blank">Ir a pistolas</a>
+        </div>
+      </div>
+
+      <!-- REVOLVERES -->
+      <div class="card-catalogo" style="--i:url(revolver.jpg)">
+        <div class="card-content">
+          <h5>Revolver</h5>
+          <a href="{% url 'revolver' %}" target="_blank">Ir a revolveres</a>
+        </div>
+      </div>
+
+      <!-- ESCOPETAS -->
+      <div class="card-catalogo" style="--i:url(870remington.jpg)">
+        <div class="card-content">
+          <h5>Escopetas</h5>
+          <a href="{% url 'escopeta' %}" target="_blank">Ir a escopetas</a>
+        </div>
+      </div>
+
+      
+      <!--  SUBFUSILES  -->
+
+      <div class="card-catalogo" style="--i:url(mp5.jpg)">
+        <div class="card-content">
+          <h5>Subfusiles</h5>
+          <a href="{% url 'subfusiles' %}"target="_blank">Ir a subfusiles</a>
+        </div>
+      </div>
+
+
+      <!--RIFLES DE ASALTO  -->
+
+      <div class="card-catalogo" style="--i:url(rifledeasalto.jpg)">
+        <div class="card-content">
+          <h5>Rifles de Asalto</h5>
+          <a href="{% url 'rifledeasalto' %}"target="_blank">Ir a rifles de asalto</a>
+        </div>
+      </div>
+
+      <!-- LMG -->
+      <div class="card-catalogo" style="--i:url(m60.jpg)">
+        <div class="card-content">
+          <h5>Ametralladoras</h5>
+          <a href="{% url 'lmg' %} "target="_blank">Ir a LMG</a>
+        </div>
+      </div>
+
+      <!-- RIFLES TD -->
+      <div class="card-catalogo" style="--i:url(mk14.jpg)">
+        <div class="card-content">
+          <h5> Rifles de Tirador Designado</h5>
+          <a href="{% url 'td' %}" target="_blank">Ir a DMR</a>
+        </div>
+      </div>
+
+      <!-- SNIPER -->
+      <div class="card-catalogo" style="--i:url(srr-61.jpg)">
+        <div class="card-content">
+          <h5>Francotiradores</h5>
+          <a href="{% url 'sniper' %} "target="_blank">Ir a francotiradores</a>
+        </div>
+      </div>
+    </div>
+
+    <!--  
+    <footer>
+
+      <div class="container__footer">
+          <div class="box__footer">
+              <div class="logo">
+                  <img src="img/hxh.png" alt="">
+              </div>
+              <div class="terms">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas impedit cum cumque velit libero officiis quam doloremque reprehenderit quae corporis! Delectus architecto officia praesentium atque laudantium, nam deleniti sapiente deserunt.</p>
+              </div>
+          </div>
+          <div class="box__footer">
+              <h2>Compañia</h2>
+              AGREGAR EL INICIO 
+              <a href="#">Inicio</a>
+              <a href="nuevo-index.html">Catalogo</a>
+              <a href="carrito.html">Carrito</a>            
+          </div>
+
+          <div class="box__footer">
+              <h2>Redes Sociales de los CEO</h2>
+              <a href="https://www.instagram.com/maty_castro/"><i class="fab fa-instagram-square"></i> Maty</a>
+              <a href="https://www.instagram.com/psicosis_tt/"><i class="fab fa-instagram-square"></i> Josexo</a>
+          </div>
+
+      </div>
+
+      <div class="box__copyright">
+          <hr>
+          <p>Todos los derechos reservados © 2023 <b>Duocanos</b></p>
+      </div>
+  </footer>
+    -->
+</body>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js" integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+  </body>
+</html>

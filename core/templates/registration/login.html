@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="{% static 'core/'%}css/stylelogin.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+
+    <form class="form" method="post">
+        {% csrf_token %}
+        <h2 class="form__tittle">Ingresar</h2>
+        <p class="form__paragraph">No tienes cuenta? <a href="{% url 'registro_user' %}" class="form__link">Entra aqui</a></p>
+
+
+        <h2>Autenticacion</h2>
+        <form action="" method="post">
+            {% csrf_token %}
+            <table>
+                {{ form.as_table }}
+            </table>
+
+            <input type="submit" value="Login">
+
+        </form>
+
+        <!-- 
+        <div class="form__container">
+               
+                <div class="form__group">
+                    <input type="text" id="user" class="form__input" placeholder=" ">
+                    <label for="user" class="form__label">Usuario:</label>
+                    <span class="form__line"></span>
+
+                </div>  <div class="form__group">
+                    <input type="text" id="password" class="form__input" placeholder=" ">
+                    <label for="password" class="form__label">Contraseña:</label>
+                    <span class="form__line"></span>
+                </div>
+
+                <input type="submit" class="form__submit" value="Entrar">
+        </div>
+         -->
+    </form>   
+        
+</body>
+</html>
+
